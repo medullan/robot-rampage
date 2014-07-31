@@ -9,7 +9,7 @@ Add todo
     Given I am on the TODO Page
     When I enter ${TASK}
     And I Press enter
-    Then The page should contain ${TASK}
+    Then The page should contain    ${TASK}
 
 *** Keywords ***
 I am on the TODO Page
@@ -21,5 +21,6 @@ I enter ${task}
 I Press enter
     Press Key    id=new-todo    \\10
 
-The page should contain ${task}
+The page should contain
+    [Arguments]    ${task}
     Page Should Contain    ${task}
