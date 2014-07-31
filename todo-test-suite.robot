@@ -5,7 +5,7 @@ Library           Selenium2Library
 Add todo
     Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
     Input Text    new-todo    My New Todo
-    Press Key    id=new-todo    \\13
+    Press Key    new-todo    \\\13
 
 Remove todo
     Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
