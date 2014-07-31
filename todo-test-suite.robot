@@ -4,7 +4,12 @@ Library           Selenium2Library
 *** Test Case ***
 Add todo
     Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
-    Input Text    new-todo    My New Todo Task
-    Sleep    5s
+    Input Text    new-todo    My New Todo
     Press Key    id=new-todo    \\13
-    Page Should Contain    My New Todo Task
+
+Remove todo
+    Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
+    Input Text    new-todo    My New Todo
+    Press Key    id=new-todo    \\13
+    Mouse Over    css=div[class=view] > label
+    Click Button    css=.destroy
