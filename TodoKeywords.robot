@@ -10,7 +10,7 @@ I enter ${task}
 
 I Press enter
     Sleep    5s
-    Press Key    id=new-todo    \\13
+    Press Key    id=new-todo    \\10
 
 The page should contain ${task}
     Page Should Contain    ${task}
