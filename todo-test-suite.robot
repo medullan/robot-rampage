@@ -1,10 +1,10 @@
 *** Settings ***
 Library           Selenium2Library
+Resource          TodoKeywords.robot
 
 *** Test Case ***
 Add todo
-    Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
-    Input Text    new-todo    My New Todo Task
-    Sleep    5s
-    Press Key    id=new-todo    \\13
-    Page Should Contain    My New Todo Task
+    Given I am on the TODO Page
+    When I enter My New Todo Task
+    And I Press enter
+    Then The page shold contain My New Todo Task
