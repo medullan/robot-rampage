@@ -1,6 +1,4 @@
 *** Settings ***
-Suite Setup       Setup
-Suite Teardown    Teardown
 Library           Selenium2Library
 
 *** Test Case ***
@@ -27,9 +25,3 @@ I Press enter
 
 The page should contain My New Todo Task
     Page Should Contain    ${task}
-
-Setup
-    I am on the TODO Page
-
-Teardown
-    Close Browser
