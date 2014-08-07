@@ -1,5 +1,6 @@
 *** Settings ***
 Library           Selenium2Library
+Resource          Variables/variables.robot
 
 *** Test Case ***
 Add todo
