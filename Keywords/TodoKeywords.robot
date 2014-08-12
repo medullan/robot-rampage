@@ -2,10 +2,9 @@
 Library           Selenium2Library
 
 *** Keywords ***
-I am on the TODO Page
-    Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
-
 I enter ${task}
+    #I am on the TODO Page
+    #Open Browser    http://todomvc.com/architecture-examples/angularjs-perf/#/    firefox
     Input Text    new-todo    ${task}
 
 I Press enter
