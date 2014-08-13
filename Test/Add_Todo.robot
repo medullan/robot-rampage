@@ -8,6 +8,7 @@ Resource          ../_commonResource.robot
 
 *** Test Case ***
 Add todo
+    [Tags]    prod_only
     When I enter ${TASK}
     And I Press enter
     Then The page should contain    ${TASK}
